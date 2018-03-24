@@ -29,7 +29,7 @@ class HourCell: UITableViewCell {
             maxTempLabel?.text = String(format: "%.2f",item.maxTemp!) + degree  
             windLabel?.text = String(describing: item.windSpeed!)
             if let rainfall = item.rainfallInLast3Hours {
-                rainLabel?.text = String(describing: rainfall)
+                rainLabel?.text = String(format: "%.2f", rainfall)
                 rainTextLabel.text = "RAIN"
             }else{
                 rainLabel?.text = " "
